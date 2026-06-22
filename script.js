@@ -7,10 +7,9 @@
   const el = document.getElementById('typed');
   if (!el) return;
   const roles = [
-    'AI/ML Engineer',
+    'AI/ML Engineer & Data Scientist',
+    'Forecasting & Consulting',
     'LLM & RAG Engineer',
-    'NLP Researcher',
-    'Reinforcement Learning',
   ];
   let r = 0, c = 0, deleting = false;
 

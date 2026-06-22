@@ -209,17 +209,17 @@
 
   const celebrate = msg => { confetti(); toast(msg); };
 
-  // (a) spam-click the logo
-  const logo = document.querySelector('.nav__logo');
-  if (logo) {
-    const lines = ['oh you found me 👀', 'keep going...', 'okay okay, you win 🎉', "check the rest of the page, there's another easter egg👀"];
-    let clicks = 0;
-    logo.addEventListener('click', e => {
+  // (a) spam-click the logo OR the photo
+  const lines = ['oh you found me 👀', 'keep going...', 'okay okay, you win 🎉', "check the rest of the page, there's another easter egg👀"];
+  let clicks = 0;
+  [document.querySelector('.nav__logo'), document.querySelector('.about__photo')].forEach(el => {
+    if (!el) return;
+    el.addEventListener('click', e => {
       e.preventDefault();
       celebrate(lines[Math.min(clicks, lines.length - 1)]);
       clicks++;
     });
-  }
+  });
 
   // (b) guess my favorite color
   const input = document.getElementById('guess-input');

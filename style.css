@@ -211,7 +211,10 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--border);
   margin-bottom: 1.3rem;
   box-shadow: 0 8px 24px rgba(120, 72, 20, .12);
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
 }
+.about__photo:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(120, 72, 20, .2); }
 .about__facts h3 { font-family: var(--mono); color: var(--accent); font-size: .9rem; margin-bottom: 1rem; }
 .about__facts ul { list-style: none; }
 .about__facts li { padding: .6rem 0; border-bottom: 1px solid var(--border); font-size: .92rem; }

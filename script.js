@@ -63,7 +63,7 @@
 /* ---------- 3. Scroll reveal ---------- */
 (function reveal() {
   const targets = document.querySelectorAll(
-    '.section__title, .about > *, .skills__group, .tl, .featured, .card, .edu__col, .contact__lead'
+    '.section__title, .about > *, .skills__group, .tl, .card, .edu__item, .contact__lead'
   );
   targets.forEach(t => t.classList.add('reveal'));
   const io = new IntersectionObserver(entries => {

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kusai Aljuhmani · AI/ML Engineer</title>
+  <meta name="description" content="Kusai Aljuhmani · AI/ML Engineer. MSc in Artificial Intelligence, Università di Bologna. LLM engineering, RAG systems, transformer fine-tuning, reinforcement learning." />
+
+  <!-- Open Graph (link previews on LinkedIn / messaging) -->
+  <meta property="og:title" content="Kusai Aljuhmani · AI/ML Engineer" />
+  <meta property="og:description" content="LLM engineering · RAG systems · transformer fine-tuning · reinforcement learning" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://KUSAI00.github.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- animated background -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">KA<span class="accent">_</span></a>
+    <nav class="nav__links" id="nav-links">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button class="nav__burger" id="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <p class="hero__hello">// hello, world, I'm</p>
+      <h1 class="hero__name">Kusai Aljuhmani</h1>
+      <h2 class="hero__role">
+        <span class="prompt">&gt;</span> <span id="typed"></span><span class="cursor">█</span>
+      </h2>
+      <p class="hero__tagline">
+        I build things that learn: LLMs, RAG pipelines, the occasional reinforcement-learning
+        agent. I like making them actually useful to real people. Finishing my
+        MSc in AI at Università di Bologna, and looking for my next team. 🚀
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        <a href="https://github.com/KUSAI00" class="btn btn--ghost" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="hero__meta">
+        <span>📍 Bologna, Italy</span>
+        <span>🎓 MSc AI · 105/110 (proj.)</span>
+        <span class="status"><span class="dot"></span> Available immediately</span>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">↓</a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <h2 class="section__title"><span class="prompt-num">1.</span> <span class="prompt-host">about</span>:~$ <span class="prompt-cmd">whoami</span> <span class="prompt-cursor">█</span></h2>
+    <div class="about">
+      <div class="about__text">
+        <p class="about__q">So… why AI?</p>
+        <p>
+          I started out in <strong>physics</strong> and <strong>electrical engineering</strong>. I liked
+          understanding how things <em>actually</em> work, from the math down to the circuits. Somewhere
+          along the way I realised the most fascinating systems weren't just the ones I was wiring up, but
+          the ones that could <em>learn</em> from data and adapt to the world around them. So I leaned all the way in and did an
+          <strong>MSc in Artificial Intelligence</strong> at Università di Bologna.
+        </p>
+        <p class="about__q">What I love doing</p>
+        <p>
+          Taking a messy real-world problem and turning it into something a model can actually help with.
+          Sometimes that's building LLM applications, RAG pipelines, and Agent harness. Other times it's
+          applying machine learning to forecasting, anomaly detection, and data-driven decision systems.
+          What I enjoy most is the <em>translation</em>: taking a complex technical result and explaining
+          it so a non-technical person goes "oh, that's actually useful."
+        </p>
+
+        <p class="about__q">When I'm not coding</p>
+        <p>
+          I'm probably <em>talking to people</em>, honestly one of my favourite things. I love
+          picking up <em>languages</em> (Arabic, English, Turkish, Italian so far, and always
+          tempted to start another), because every new one is a new set of people you get to
+          really understand. And when I want to switch my brain off, you'll find me at a
+          <em>billiards</em> table lining up the next shot. 🎱
+        </p>
+      </div>
+      <aside class="about__facts">
+        <img class="about__photo" src="img/san.jpeg" alt="Kusai Aljuhmani" loading="lazy" />
+        <h3>// quick facts</h3>
+        <ul>
+          <li><span>Currently</span> Final-stage MSc AI · Bologna</li>
+          <li><span>Looking for</span> AI/ML roles (remote or on-site)</li>
+          <li><span>Status</span> Available immediately</li>
+          <li><span>Speaks</span> Arabic (native) · English C1 · Turkish B2 · Italian B1–2</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section" id="skills">
+    <h2 class="section__title"><span class="prompt-num">2.</span> <span class="prompt-host">skills</span>:~$ <span class="prompt-cmd">ls</span> <span class="prompt-cursor">█</span></h2>
+    <div class="skills">
+      <div class="skills__group">
+        <h3>Programming</h3>
+        <ul class="chips">
+          <li>Python</li><li>C++</li><li>MATLAB</li><li>Next.js</li><li>Flutter</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>ML Frameworks</h3>
+        <ul class="chips">
+          <li>PyTorch</li><li>TensorFlow</li><li>Hugging Face Transformers</li><li>scikit-learn</li><li>OpenCV</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>AI/ML Domains</h3>
+        <ul class="chips">
+          <li>NLP</li><li>LLM engineering</li><li class="chip--star">Agent Harness</li><li>RAG</li>
+          <li>Transformer fine-tuning</li><li>RL</li><li>GNNs</li><li>Computer Vision</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>LLM Tooling</h3>
+        <ul class="chips">
+          <li>OpenAI / Anthropic / Gemini APIs</li><li>LangGraph</li><li>DSPy</li>
+          <li>llama.cpp</li><li>Ollama</li><li>ChromaDB</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Data</h3>
+        <ul class="chips">
+          <li>Pandas</li><li>SQL (PostgreSQL)</li><li>Power BI</li>
+          <li>anomaly detection</li><li>forecasting</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Cloud &amp; DevOps</h3>
+        <ul class="chips">
+          <li>Azure</li><li>Firebase</li><li>Docker</li><li>Git / GitHub</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Embedded &amp; Hardware</h3>
+        <ul class="chips">
+          <li>ESP8266</li><li>FPGA</li><li>MCU programming</li><li>Assembly</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section" id="experience">
+    <h2 class="section__title"><span class="prompt-num">3.</span> <span class="prompt-host">experience</span>:~$ <span class="prompt-cmd">history</span> <span class="prompt-cursor">█</span></h2>
+    <div class="timeline">
+      <div class="tl">
+        <div class="tl__dot"></div>
+        <div class="tl__body">
+          <div class="tl__head">
+            <h3>Research Intern · UniboNLP</h3>
+            <span class="tl__date">Feb 2026 - Present</span>
+          </div>
+          <p class="tl__org">Bologna, Italy</p>
+          <p class="tl__desc">
+            Building LLM web-agents that generate verifiable long-horizon web tasks, using A* search
+            (plus GEPA prompt optimization) to find optimal ways to complete them.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl">
+        <div class="tl__dot"></div>
+        <div class="tl__body">
+          <div class="tl__head">
+            <h3>Embedded Systems Intern · METU</h3>
+            <span class="tl__date">2022</span>
+          </div>
+          <p class="tl__desc">Programmed FPGA and MCU chips, hands-on work right at the hardware/software boundary.</p>
+        </div>
+      </div>
+
+      <div class="tl">
+        <div class="tl__dot"></div>
+        <div class="tl__body">
+          <div class="tl__head">
+            <h3>Electrical Support Engineer · 3DTİM</h3>
+            <span class="tl__date">2023</span>
+          </div>
+          <p class="tl__desc">Helped customers troubleshoot machinery faults, and got good at explaining complex things simply under pressure.</p>
+        </div>
+      </div>
+
+      <div class="tl">
+        <div class="tl__dot"></div>
+        <div class="tl__body">
+          <div class="tl__head">
+            <h3>Operations Assistant · INMAA</h3>
+            <span class="tl__date">2023 - 2024</span>
+          </div>
+          <p class="tl__desc">Managed logistics and procurement for construction sites in the UAE.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section" id="projects">
+    <h2 class="section__title"><span class="prompt-num">4.</span> <span class="prompt-host">projects</span>:~$ <span class="prompt-cmd">ls</span> <span class="prompt-cursor">█</span></h2>
+
+    <!-- PROJECT GRID: all cards are equal. Copy a block to add more. -->
+    <div class="cards">
+
+      <!-- Each card has a media slot at the top, ready for an image/gif later.
+           Replace the .card__media div with <img src="assets/NAME.png" alt="..."> -->
+
+      <article class="card">
+        <div class="card__media"><span>🧠 image / gif soon</span></div>
+        <div class="card__top">
+          <h3>IDGL + DistilBERT</h3>
+          <!-- TODO: replace # with the repo URL once pushed -->
+          <a class="card__link" href="#" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+        <p>
+          Plugged DistilBERT into Iterative Deep Graph Learning and trained the transformer and a
+          differentiable graph learner together (GAT/GCN) for movie-review sentiment regression.
+        </p>
+        <p class="card__metric">R² 42% → 68.6%, more than doubled the explained variance</p>
+        <ul class="chips chips--sm">
+          <li>PyTorch</li><li>DistilBERT</li><li>GNN</li><li>GAT/GCN</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__media"><span>🩰 image / gif soon</span></div>
+        <div class="card__top">
+          <h3>Creative AI · Choreography</h3>
+          <a class="card__link" href="https://github.com/KUSAI00/danceAI_project" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+        <p>
+          An agent that generates dance choreography under hard rules (no collisions, speed limits,
+          stage boundaries), checks its own output, and keeps re-prompting itself until it's valid,
+          across three Gemini tiers.
+        </p>
+        <p class="card__metric">Pro 100% · Flash 75% · Flash-Lite 20–60% success</p>
+        <ul class="chips chips--sm">
+          <li>Gemini API</li><li>Agents</li><li>Constraint solving</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__media"><span>📄 image / gif soon</span></div>
+        <div class="card__top">
+          <h3>RAG PDF Chatbot</h3>
+          <a class="card__link" href="https://github.com/KUSAI00/rag-pdf-chatbot" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+        <p>
+          Ask questions about any PDF and get answers grounded in the document: chunking, embeddings
+          and a retrieval pipeline so the model cites real text instead of making things up.
+        </p>
+        <p class="card__metric">RAG · ChromaDB · LLM</p>
+        <ul class="chips chips--sm">
+          <li>RAG</li><li>ChromaDB</li><li>Python</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__media"><span>🧾 image / gif soon</span></div>
+        <div class="card__top">
+          <h3>PDF Invoice Extractor</h3>
+          <a class="card__link" href="https://github.com/KUSAI00/pdf-invoice-extractor" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+        <p>
+          Pulls structured fields (totals, dates, line items) out of messy invoice PDFs into clean
+          data. The boring-but-useful kind of automation companies actually pay for.
+        </p>
+        <p class="card__metric">Document AI · data extraction</p>
+        <ul class="chips chips--sm">
+          <li>Python</li><li>PDF parsing</li><li>Automation</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__media"><span>🔡 image / gif soon</span></div>
+        <div class="card__top">
+          <h3>Decoder-only Transformer</h3>
+          <a class="card__link" href="https://github.com/KUSAI00/decoder-only-transformer" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+        <p>
+          A GPT-style transformer built from scratch to really understand how attention works under
+          the hood, not just calling a library but wiring the whole thing myself.
+        </p>
+        <p class="card__metric">From-scratch · attention · language modeling</p>
+        <ul class="chips chips--sm">
+          <li>PyTorch</li><li>Transformers</li><li>From scratch</li>
+        </ul>
+      </article>
+
+      <!--
+        ➕ ADD A NEW PROJECT: copy this template, fill it in.
+        <article class="card">
+          <div class="card__media"><span>EMOJI image / gif soon</span></div>
+          <div class="card__top">
+            <h3>PROJECT TITLE</h3>
+            <a class="card__link" href="REPO_URL" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+          <p>One or two friendly sentences about what it does.</p>
+          <p class="card__metric">KEY RESULT / METRIC</p>
+          <ul class="chips chips--sm"><li>Tag</li><li>Tag</li></ul>
+        </article>
+      -->
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section" id="education">
+    <h2 class="section__title"><span class="prompt-num">5.</span> <span class="prompt-host">education</span>:~$ <span class="prompt-cmd">cat edu.md</span> <span class="prompt-cursor">█</span></h2>
+    <div class="edu-list">
+      <div class="edu__item">
+        <h4>MSc in Artificial Intelligence</h4>
+        <p class="edu__org">Università di Bologna · 2024 - 2026 · projected 105/110</p>
+      </div>
+      <div class="edu__item">
+        <h4>BSc Electrical &amp; Electronics Engineering</h4>
+        <p class="edu__org">Middle East Technical University · Honor Student</p>
+      </div>
+      <div class="edu__item">
+        <h4>BSc Physics</h4>
+        <p class="edu__org">Middle East Technical University · Honor Student</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section--contact" id="contact">
+    <h2 class="section__title"><span class="prompt-num">6.</span> <span class="prompt-host">contact</span>:~$ <span class="prompt-cmd">./say-hi</span> <span class="prompt-cursor">█</span></h2>
+    <p class="contact__lead">
+      I'm actively looking for AI/ML roles and open to remote or on-site. The fastest way to reach me is email.
+    </p>
+    <a href="mailto:qusaijh482@gmail.com" class="btn btn--primary btn--lg">qusaijh482@gmail.com</a>
+    <div class="contact__links">
+      <a href="https://github.com/KUSAI00" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/kusai-aljuhmani-5a5938211" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/kusai_jh" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </section>
+
+  <!-- easter egg: guess my favorite color -->
+  <div class="guess">
+    <p class="guess__line"><span class="prompt-host">kusai</span>:~$ <input id="guess-input" class="guess__input" type="text" placeholder="guess my favorite color" autocomplete="off" spellcheck="false" aria-label="Guess my favorite color" /></p>
+    <p class="guess__reply" id="guess-reply" aria-live="polite"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

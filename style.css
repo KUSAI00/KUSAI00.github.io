@@ -292,6 +292,8 @@ a { color: inherit; text-decoration: none; }
   font-size: .8rem;
 }
 .card__media img { width: 100%; height: 100%; object-fit: cover; }
+/* for charts/diagrams where cropping would hide data — stretch to fill the slot */
+.card__media--contain img { object-fit: fill; }
 
 .card__top { display: flex; justify-content: space-between; align-items: baseline; gap: .8rem; padding: 1.3rem 1.4rem 0; }
 .card__top h3 { font-size: 1.12rem; }

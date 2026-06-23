@@ -224,9 +224,10 @@
            Replace the .card__media div with <img src="assets/NAME.png" alt="..."> -->
 
       <article class="card">
-        <div class="card__media"><span>🧠 image / gif soon</span></div>
+        <div class="card__media card__media--contain"><img src="img/idgl_graph.png" alt="A graph the model learned for a single review — nodes are DistilBERT subword tokens, edges are connections the graph learner kept" loading="lazy" /></div>
         <div class="card__top">
           <h3>IDGL + DistilBERT</h3>
+          <a class="card__link" href="https://github.com/KUSAI00/IDGL-DistilBERT" target="_blank" rel="noopener">Code ↗</a>
         </div>
         <p>
           Plugged DistilBERT into Iterative Deep Graph Learning and trained the transformer and a
@@ -239,15 +240,14 @@
       </article>
 
       <article class="card">
-        <div class="card__media"><span>🩰 image / gif soon</span></div>
+        <div class="card__media card__media--contain"><img src="img/dance_convergence.png" alt="Cumulative validation success rate by run number, comparing base vs. improved prompts across three Gemini tiers" loading="lazy" /></div>
         <div class="card__top">
           <h3>Creative AI · Choreography</h3>
           <a class="card__link" href="https://github.com/KUSAI00/danceAI_project" target="_blank" rel="noopener">Code ↗</a>
         </div>
         <p>
-          An agent that generates dance choreography under hard rules (no collisions, speed limits,
-          stage boundaries), checks its own output, and keeps re-prompting itself until it's valid,
-          across three Gemini tiers.
+          An agent that generates dance choreography under hard rules, validates its own output, and
+          re-prompts itself until it's valid. Larger Gemini models converge faster across runs.
         </p>
         <p class="card__metric">Pro 100% · Flash 75% · Flash-Lite 20–60% success</p>
         <ul class="chips chips--sm">

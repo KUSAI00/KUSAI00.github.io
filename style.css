@@ -295,6 +295,8 @@ a { color: inherit; text-decoration: none; }
 .card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 /* for charts/diagrams where cropping would hide data — stretch to fill the slot */
 .card__media--contain img { object-fit: fill; }
+/* for pixel art / multi-panel gifs that shouldn't be cropped or stretched — letterbox instead */
+.card__media--fit img { object-fit: contain; }
 
 .card__top { display: flex; justify-content: space-between; align-items: baseline; gap: .8rem; padding: 1.3rem 1.4rem 0; }
 .card__top h3 { font-size: 1.12rem; }

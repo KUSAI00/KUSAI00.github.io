@@ -293,6 +293,40 @@
       </article>
 
       <article class="card">
+        <div class="card__media card__media--fit"><img src="img/staghunt_demo.gif" alt="Animated grid world — a scripted policy and four learned agent pairs playing the same Stag Hunt episode side by side" loading="lazy" /></div>
+        <div class="card__top">
+          <h3>Cooperation in the Markov Stag Hunt</h3>
+          <a class="card__link" href="https://github.com/KUSAI00/markov-stag-hunt-marl" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p>
+          Two RL agents share a grid where hunting the stag together pays big and going alone gets you
+          mauled. Tabular Q-learning and DQN show that whether they learn to cooperate depends on what
+          they can observe, not just on how reward is shared.
+        </p>
+        <p class="card__metric">Joint return 148 → 809 with shared reward · raw obs hunts at α = 0</p>
+        <ul class="chips chips--sm">
+          <li>Multi-agent RL</li><li>DQN</li><li>Q-learning</li><li>PyTorch</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__media card__media--contain"><img src="img/multiplicity_aggregation.png" alt="Bar chart of contested-decision fraction on COMPAS — individual models vs. ensembles, by race group" loading="lazy" /></div>
+        <div class="card__top">
+          <h3>When Equally-Good Models Disagree</h3>
+          <a class="card__link" href="https://github.com/KUSAI00/When-Equally-Good-Models-Disagree" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p>
+          A fairness audit of predictive multiplicity: builds a Rashomon set of near-equally-accurate
+          models on COMPAS and Adult, measures who gets arbitrary decisions, and tests whether
+          ensembling fixes it fairly.
+        </p>
+        <p class="card__metric">Multiplicity 31% → 4% on COMPAS, no accuracy loss (67.2 → 67.5%)</p>
+        <ul class="chips chips--sm">
+          <li>AI Ethics</li><li>Fairness</li><li>scikit-learn</li><li>Rashomon sets</li>
+        </ul>
+      </article>
+
+      <article class="card">
         <div class="card__media"><span>🔬 coming soon</span></div>
         <div class="card__top">
           <h3>Long-Horizon Web Agents</h3>
